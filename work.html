@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="color-scheme" content="dark" />
+<link rel="icon" href="favicon.ico" sizes="any" />
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0naHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmcnIHZpZXdCb3g9JzAgMCAzMiAzMic+PHJlY3Qgd2lkdGg9JzMyJyBoZWlnaHQ9JzMyJyByeD0nNicgZmlsbD0nIzE0MTEwZCcvPjxwYXRoIGQ9J00xNiA0IEwxOC43IDEzLjMgTDI4IDE2IEwxOC43IDE4LjcgTDE2IDI4IEwxMy4zIDE4LjcgTDQgMTYgTDEzLjMgMTMuMyBaJyBmaWxsPScjY2JiOTkwJy8+PC9zdmc+" />
+<link rel="apple-touch-icon" href="apple-touch-icon.png" />
+<title>The Work — Martin Kriegler</title>
+<meta name="description" content="Martin Kriegler — the work. Four original neo-noir feature screenplays." />
+<style>
+  :root{ color-scheme:dark; --bg:#14110d; --cream:#f2ece0; --soft:#ddd5c6; --mute:#a89e8d;
+    --ox:#c65a4e; --gold:#cbb990; --rule:rgba(238,228,210,.14);
+    --serif:"Iowan Old Style","Palatino Linotype",Palatino,"Book Antiqua",Georgia,serif;
+    --sans:ui-sans-serif,system-ui,-apple-system,"Segoe UI",Helvetica,Arial,sans-serif; }
+  *{box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  body{margin:0; background:var(--bg); color:var(--soft); font-family:var(--serif);
+    font-size:18px; line-height:1.65; -webkit-font-smoothing:antialiased;}
+  .wrap{max-width:1000px; margin:0 auto; padding:0 28px;}
+  .dia{color:var(--gold); font-size:.9em; line-height:1;}
+
+  .topnav{padding:34px 0 0;}
+  .topnav a{font-family:var(--sans); font-size:12px; font-weight:700; letter-spacing:.22em;
+    text-transform:uppercase; color:var(--mute); text-decoration:none;}
+  .topnav a:hover{color:var(--cream);}
+
+  header.bh{padding:54px 0 10px; animation:rise .8s ease both;}
+  .bh .eyebrow{font-family:var(--sans); font-size:11.5px; font-weight:700; letter-spacing:.3em;
+    text-transform:uppercase; color:var(--ox); display:flex; align-items:center; gap:.7em; margin:0 0 22px; max-width:640px;}
+  .bh .eyebrow::after{content:""; flex:1; height:1px; background:var(--rule);}
+  .bh h1{font-weight:400; font-size:clamp(30px,7vw,52px); letter-spacing:.08em; text-transform:uppercase;
+    margin:0; color:var(--cream); line-height:1.05;}
+  .bh .role{font-family:var(--sans); font-size:12.5px; font-weight:700; letter-spacing:.32em;
+    text-transform:uppercase; color:var(--ox); margin:16px 0 0;}
+
+  .legend{font-family:var(--sans); font-size:12.5px; color:var(--mute); letter-spacing:.02em;
+    display:flex; flex-wrap:wrap; gap:18px; margin:34px 0 8px;}
+  .legend span{display:inline-flex; align-items:center; gap:8px;}
+  .pie{width:13px; height:13px; border-radius:50%; border:1.5px solid var(--ox); flex:none;
+    background:conic-gradient(var(--ox) var(--p), transparent 0);}
+
+  .project{display:flex; flex-direction:row; gap:44px; align-items:flex-start; padding:46px 0; border-top:1px solid var(--rule);}
+  .project:first-of-type{margin-top:14px;}
+  .poster{width:310px; flex:none; height:auto; border-radius:2px; border:1px solid var(--rule);
+    box-shadow:0 10px 32px rgba(0,0,0,.55); display:block;}
+  .pbody{flex:1; min-width:0;}
+  .pmeta{display:flex; align-items:center; flex-wrap:wrap; gap:12px; margin:0 0 14px;
+    font-family:var(--sans); font-size:11.5px; font-weight:700; letter-spacing:.15em; text-transform:uppercase;}
+  .pmeta .status{display:inline-flex; align-items:center; gap:9px; color:var(--ox);}
+  .pmeta .sep{color:var(--rule);}
+  .pmeta .genre{color:var(--mute); font-weight:600;}
+  .project h3{font-weight:400; font-size:31px; letter-spacing:.05em; text-transform:uppercase;
+    margin:0 0 5px; color:var(--cream); line-height:1.1;}
+  .place{font-style:italic; color:var(--mute); font-size:16px; margin:0 0 15px;}
+  .log{margin:0; font-size:17.5px; line-height:1.62; color:var(--soft);}
+  .find{margin:14px 0 0; font-size:15px; color:var(--mute);}
+  .find a{color:var(--ox); text-decoration:none; border-bottom:1px solid rgba(198,90,78,.4); padding-bottom:1px;}
+  .find a:hover{border-color:var(--ox);}
+
+  .foot-links{border-top:1px solid var(--rule); margin-top:0; padding:34px 0 0;
+    display:flex; flex-wrap:wrap; gap:26px; align-items:center;}
+  .foot-links a{font-family:var(--sans); font-size:13px; font-weight:700; letter-spacing:.12em;
+    text-transform:uppercase; color:var(--ox); text-decoration:none;}
+  .foot-links a:hover{color:var(--gold);}
+  .foot-links .mail{font-family:var(--serif); font-size:17px; letter-spacing:0; text-transform:none; font-weight:400; color:var(--soft);}
+  .foot-links .mail a{font-family:var(--serif); font-size:17px; letter-spacing:0; text-transform:none; font-weight:400; color:var(--ox); border-bottom:1px solid rgba(198,90,78,.4);}
+
+  footer{text-align:center; padding:56px 0 60px; margin-top:40px; border-top:1px solid var(--rule);
+    font-family:var(--sans); font-size:12.5px; letter-spacing:.22em; text-transform:uppercase; color:var(--mute);}
+  footer .dia{letter-spacing:0; margin:0 .5em;}
+  footer .copy{display:block; margin-top:12px; font-size:10.5px; letter-spacing:.14em; color:var(--mute); opacity:.85;}
+  footer .copy a{color:var(--mute); text-decoration:none;}
+  footer .copy a:hover{color:var(--cream);}
+
+  :focus-visible{outline:2px solid var(--ox); outline-offset:3px;}
+  @keyframes rise{from{opacity:0; transform:translateY(14px);} to{opacity:1; transform:none;}}
+  @media (prefers-reduced-motion:reduce){*{animation:none !important;}}
+  @media (max-width:820px){
+    .project{flex-direction:column; gap:24px;}
+    .poster{width:100%;}
+  }
+  @media (max-width:600px){
+    body{font-size:17px;}
+    .project{gap:20px; padding:40px 0;}
+    .project h3{font-size:27px;}
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <nav class="topnav"><a href="index.html">&#8592;&nbsp;&nbsp;Martin Kriegler</a></nav>
+
+  <header class="bh">
+    <p class="eyebrow"><span class="dia">&#10022;</span>Martin Kriegler</p>
+    <h1>The Work</h1>
+    <p class="role">Four original feature screenplays</p>
+  </header>
+
+  <section class="worklist">
+    <div class="legend">
+      <span><i class="pie" style="--p:25%"></i> In development</span>
+      <span><i class="pie" style="--p:50%"></i> In progress</span>
+      <span><i class="pie" style="--p:75%"></i> Final draft</span>
+      <span><i class="pie" style="--p:100%"></i> Complete</span>
+    </div>
+
+    <article class="project">
+      <div class="pbody">
+      <p class="pmeta"><span class="status"><i class="pie" style="--p:100%"></i> Complete</span><span class="sep">/</span><span class="genre">Neo-noir crime drama</span></p>
+      <h3>Quiet Departures</h3>
+      <p class="place">Weirton, West Virginia — one winter, mid-2020s</p>
+      <p class="log">Marv Coyle has buried this town&#8217;s dead for thirty years. He is the man people call at three in the morning, the one who knows which hymn a widow needs before she does. He is also three months from losing the funeral home his grandfather built. When his old driver dies, Marv finds a coffee can of cash in a drawer and learns what else has been riding in his caskets, and for whom. He tells himself it is once. Nobody stops a hearse. Nobody weighs the dead. By the time the debt is paid and the reason for it is gone, the runs have not stopped, and a man across the river has begun to take an interest in how good Marv is at being trusted &#8212; and something is coming that will require him to look, at last, straight at what his own hands have done.</p>
+      <p class="find">Find it on <a href="https://blcklst.com/profile/martin-kriegler" target="_blank" rel="noopener">The Black List</a></p>
+      </div>
+      <img class="poster" src="poster-qd.jpg" alt="Quiet Departures poster" loading="lazy" />
+    </article>
+
+    <article class="project">
+      <div class="pbody">
+      <p class="pmeta"><span class="status"><i class="pie" style="--p:75%"></i> Final draft</span><span class="sep">/</span><span class="genre">Period Western</span></p>
+      <h3>The Administrator</h3>
+      <p class="place">New Mexico Territory — Mesilla &amp; the Jornada del Muerto, 1882</p>
+      <p class="log">Amos Dill is the Territory&#8217;s hangman, and the best of them. He measures a man collar to heel, weighs him, figures the drop to the inch, and tells himself the arithmetic does the killing. In twenty years he has never set a figure wrong. Then a commission arrives with a name he knows: Cruz Barela, son of the one man who ever fed him at his fire. The date of the murder is a date Dill remembers, because he was in the Barela house that night, doing a thing the law calls murder at a dying man&#8217;s request. He is the only living witness to Cruz&#8217;s innocence &#8212; and to speak is to put his own neck in the rope. So he stalls. He weighs the man again. He seasons the rope. He hunts the paper for a fault. And the men who want the Barela water are watching him do it.</p>
+      </div>
+      <img class="poster" src="poster-administrator.jpg" alt="The Administrator poster" loading="lazy" />
+    </article>
+
+    <article class="project">
+      <div class="pbody">
+      <p class="pmeta"><span class="status"><i class="pie" style="--p:50%"></i> In progress</span><span class="sep">/</span><span class="genre">Road-noir</span></p>
+      <h3>Yellow</h3>
+      <p class="place">Interstate 10, El Paso to Florida — three days in March, turn of the century</p>
+      <p class="log">Dale Bowden hauls sealed freight and has built thirty years on not asking what is behind the doors. At first light on a two-lane road he finds a pair of small yellow sneakers lying on the centerline, laces knotted together. He picks them up, invents a cheerful story about who left them there, and hangs them over his windshield. He has nineteen hundred miles to run and not enough legal hours to do it, so he writes down two that aren&#8217;t true and drives. Somewhere ahead of him on the same road, two men are having a long conversation about nothing at all, and every so often something goes out the passenger window. By Florida, Dale is the only person alive who holds all the pieces.</p>
+      </div>
+      <img class="poster" src="poster-yellow.jpg" alt="Yellow poster" loading="lazy" />
+    </article>
+
+    <article class="project">
+      <div class="pbody">
+      <p class="pmeta"><span class="status"><i class="pie" style="--p:25%"></i> In development</span><span class="sep">/</span><span class="genre">Contemporary noir</span></p>
+      <h3>Samsar</h3>
+      <p class="place">Ouarzazate, Morocco — &#8220;Ouallywood,&#8221; present day</p>
+      <p class="log">Driss is the finest fixer in the desert town where the West comes to film its wars: the man who rents out extras, ruins, and &#8220;authenticity&#8221; to foreign crews. When a British director demands something real for his staged migrant crossing, Driss quietly blurs the line &#8212; shooting at an actual smuggling route, folding genuine migrants in among his hired extras. He does not know his own younger sister stands among them, chasing a real way out. Then a real man dies before the cameras, and Driss buries the truth to save the day&#8217;s work. The lie takes hold: the director wants more, a local journalist begins to circle, and every new favor asks Driss to sell a little more of his own people to keep the fiction breathing.</p>
+      </div>
+      <img class="poster" src="poster-samsar.jpg" alt="Samsar poster" loading="lazy" />
+    </article>
+  </section>
+
+  <div class="foot-links">
+    <a href="index.html">&#8592;&nbsp;Back home</a>
+    <span class="mail">Contact: <a href="mailto:Martin.Kriegler@icloud.com">Martin.Kriegler@icloud.com</a></span>
+  </div>
+
+  <footer>Martin Kriegler <span class="dia">&#10022;</span> Screenwriter<span class="copy"><a href="impressum.html">Impressum</a> &#183; <a href="datenschutz.html">Datenschutz</a> &#183; &#169; 2026 Martin Kriegler</span></footer>
+
+</div>
+</body>
+</html>
