@@ -64,11 +64,12 @@
   .pie{width:13px; height:13px; border-radius:50%; border:1.5px solid var(--ox); flex:none;
     background:conic-gradient(var(--ox) var(--p), transparent 0);}
 
-  .project{display:flex; flex-direction:column; gap:24px; align-items:flex-start; padding:46px 0; border-top:1px solid var(--rule);}
+  .work{position:relative; left:50%; transform:translateX(-50%); width:980px;}
+  .project{display:flex; flex-direction:row; gap:44px; align-items:flex-start; padding:46px 0; border-top:1px solid var(--rule);}
   .project:last-of-type{border-bottom:1px solid var(--rule);}
-  .poster{width:345px; max-width:100%; height:auto; border-radius:2px; border:1px solid var(--rule);
+  .poster{width:310px; flex:none; height:auto; border-radius:2px; border:1px solid var(--rule);
     box-shadow:0 10px 32px rgba(0,0,0,.55); display:block;}
-  .pbody{width:100%; min-width:0;}
+  .pbody{flex:1; min-width:0;}
   .pmeta{display:flex; align-items:center; flex-wrap:wrap; gap:12px; margin:0 0 14px;
     font-family:var(--sans); font-size:11.5px; font-weight:700; letter-spacing:.15em; text-transform:uppercase;}
   .pmeta .status{display:inline-flex; align-items:center; gap:9px; color:var(--ox);}
@@ -96,12 +97,16 @@
   :focus-visible{outline:2px solid var(--ox); outline-offset:3px;}
   @keyframes rise{from{opacity:0; transform:translateY(14px);} to{opacity:1; transform:none;}}
   @media (prefers-reduced-motion:reduce){*{animation:none !important;}}
+  @media (max-width:1020px){
+    .work{position:static; left:auto; transform:none; width:auto;}
+    .project{flex-direction:column; gap:24px;}
+    .poster{width:100%;}
+  }
   @media (max-width:600px){
     body{font-size:17px;}
     .hero{padding:72px 0 26px;}
     section{padding:52px 0;}
     .project{gap:20px; padding:40px 0;}
-    .poster{width:100%;}
     .project h3{font-size:27px;}
   }
 </style>
@@ -139,7 +144,6 @@
     </div>
 
     <article class="project">
-      <img class="poster" src="poster-qd.jpg" alt="Quiet Departures poster" loading="lazy" />
       <div class="pbody">
       <p class="pmeta"><span class="status"><i class="pie" style="--p:100%"></i> Complete</span><span class="sep">/</span><span class="genre">Neo-noir crime drama</span></p>
       <h3>Quiet Departures</h3>
@@ -147,36 +151,37 @@
       <p class="log">Marv Coyle has buried this town&#8217;s dead for thirty years. He is the man people call at three in the morning, the one who knows which hymn a widow needs before she does. He is also three months from losing the funeral home his grandfather built. When his old driver dies, Marv finds a coffee can of cash in a drawer and learns what else has been riding in his caskets, and for whom. He tells himself it is once. Nobody stops a hearse. Nobody weighs the dead. By the time the debt is paid and the reason for it is gone, the runs have not stopped, and a man across the river has begun to take an interest in how good Marv is at being trusted &#8212; and something is coming that will require him to look, at last, straight at what his own hands have done.</p>
       <p class="find">Find it on <a href="https://blcklst.com/profile/martin-kriegler" target="_blank" rel="noopener">The Black List</a></p>
       </div>
+      <img class="poster" src="poster-qd.jpg" alt="Quiet Departures poster" loading="lazy" />
     </article>
 
     <article class="project">
-      <img class="poster" src="poster-administrator.jpg" alt="The Administrator poster" loading="lazy" />
       <div class="pbody">
       <p class="pmeta"><span class="status"><i class="pie" style="--p:75%"></i> Final draft</span><span class="sep">/</span><span class="genre">Period Western</span></p>
       <h3>The Administrator</h3>
       <p class="place">New Mexico Territory — Mesilla &amp; the Jornada del Muerto, 1882</p>
       <p class="log">Amos Dill is the Territory&#8217;s hangman, and the best of them. He measures a man collar to heel, weighs him, figures the drop to the inch, and tells himself the arithmetic does the killing. In twenty years he has never set a figure wrong. Then a commission arrives with a name he knows: Cruz Barela, son of the one man who ever fed him at his fire. The date of the murder is a date Dill remembers, because he was in the Barela house that night, doing a thing the law calls murder at a dying man&#8217;s request. He is the only living witness to Cruz&#8217;s innocence &#8212; and to speak is to put his own neck in the rope. So he stalls. He weighs the man again. He seasons the rope. He hunts the paper for a fault. And the men who want the Barela water are watching him do it.</p>
       </div>
+      <img class="poster" src="poster-administrator.jpg" alt="The Administrator poster" loading="lazy" />
     </article>
 
     <article class="project">
-      <img class="poster" src="poster-yellow.jpg" alt="Yellow poster" loading="lazy" />
       <div class="pbody">
       <p class="pmeta"><span class="status"><i class="pie" style="--p:50%"></i> In progress</span><span class="sep">/</span><span class="genre">Road-noir</span></p>
       <h3>Yellow</h3>
       <p class="place">Interstate 10, El Paso to Florida — three days in March, turn of the century</p>
       <p class="log">Dale Bowden hauls sealed freight and has built thirty years on not asking what is behind the doors. At first light on a two-lane road he finds a pair of small yellow sneakers lying on the centerline, laces knotted together. He picks them up, invents a cheerful story about who left them there, and hangs them over his windshield. He has nineteen hundred miles to run and not enough legal hours to do it, so he writes down two that aren&#8217;t true and drives. Somewhere ahead of him on the same road, two men are having a long conversation about nothing at all, and every so often something goes out the passenger window. By Florida, Dale is the only person alive who holds all the pieces.</p>
       </div>
+      <img class="poster" src="poster-yellow.jpg" alt="Yellow poster" loading="lazy" />
     </article>
 
     <article class="project">
-      <img class="poster" src="poster-samsar.jpg" alt="Samsar poster" loading="lazy" />
       <div class="pbody">
       <p class="pmeta"><span class="status"><i class="pie" style="--p:25%"></i> In development</span><span class="sep">/</span><span class="genre">Contemporary noir</span></p>
       <h3>Samsar</h3>
       <p class="place">Ouarzazate, Morocco — &#8220;Ouallywood,&#8221; present day</p>
       <p class="log">Driss is the finest fixer in the desert town where the West comes to film its wars: the man who rents out extras, ruins, and &#8220;authenticity&#8221; to foreign crews. When a British director demands something real for his staged migrant crossing, Driss quietly blurs the line &#8212; shooting at an actual smuggling route, folding genuine migrants in among his hired extras. He does not know his own younger sister stands among them, chasing a real way out. Then a real man dies before the cameras, and Driss buries the truth to save the day&#8217;s work. The lie takes hold: the director wants more, a local journalist begins to circle, and every new favor asks Driss to sell a little more of his own people to keep the fiction breathing.</p>
       </div>
+      <img class="poster" src="poster-samsar.jpg" alt="Samsar poster" loading="lazy" />
     </article>
   </section>
 
